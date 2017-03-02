@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Blog!</title>
+	</head>
+	<ul style="list-style:none;float:right;">
+		<li style="display: inline;padding-right: 1.5em;"><a href="/blog/newpost/">New</a></li>
+		<li style="display: inline;"><a href="/">Home</a></li>
+	</ul>
+	<body>
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+
+
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		.error {
+			color: red;
+		}
+		label {
+			display: block;
+			font-size: 20px;
+		}
+		input[type=text] {
+			width: 400px;
+			font-size: 20px;
+		}
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: monospace;
+		}
+		input[type=submit] {
+			font-size: 24px;
+		}
+		.blog + .blog {
+			padding: 3px;
+		}
+		.post-subject {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.post-content {
+			margin: 0;
+			font-size: 17px;
+		}
+	</style>
+
+</html>
